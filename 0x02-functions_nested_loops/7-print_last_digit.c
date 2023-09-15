@@ -1,9 +1,22 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_last_digit- prints the last digit of an integer
+ * @j: divide the number by 10
+ * Return: i
  */
+
 int main(void)}
+
+
+int print_last_digit(int j)
+{
+	int i;
+
+	i = j % 10;
+	if (j < 0)
+		i = -i;
+	_putchar(i + '0');
+	return (i);
+}
+
