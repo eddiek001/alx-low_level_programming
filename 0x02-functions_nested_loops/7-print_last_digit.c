@@ -6,6 +6,9 @@
  * Return: i
  */
 
+int main(void)}
+
+
 int print_last_digit(int j)
 {
 	int i;
@@ -16,3 +19,4 @@ int print_last_digit(int j)
 	_putchar(i + '0');
 	return (i);
 }
+
