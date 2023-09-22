@@ -1,9 +1,10 @@
 #include "main.h"
+
 /**
- * rot13 - encoder rot
- * @str: pointer to string
+ * rot13 - Encodes a string using ROT13
+ * @str: Pointer to the input string
  *
- * Return: string out
+ * Return: Pointer to the encoded string
  */
 char *rot13(char *str)
 {
