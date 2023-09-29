@@ -3,7 +3,7 @@
 
 /*
  * main - prints name of the program
- * argc - entry point
+ * @argc: entry point
  * @argv: number of strings
  *
  * Return: Always 0
