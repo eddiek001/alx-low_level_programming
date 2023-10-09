@@ -1,5 +1,5 @@
 #include <stdlib.h>
-
+#include <stdio.h>
 /*
  * main - name of the file
  *
