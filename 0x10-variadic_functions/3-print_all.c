@@ -25,6 +25,7 @@ void print_all(const char * const format, ...)
 				printf("%d", va_arg(spc, int));
 				check_stat = 0;
 				break; /* check if condition has been met */
+
 			case 'f':
 				printf("%f", va_arg(spc, double));
 				check_stat = 0;
