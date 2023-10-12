@@ -14,7 +14,7 @@ void print_all(const char * const format, ...)
 	char *str;
 	va_list spc;
 
-	va_start(spc, format);
+	va_start(spc, format); /* variable and va_arg datatype */
 
 	i = 0;
 	while (format != NULL && format[i] != '\0')
@@ -24,7 +24,7 @@ void print_all(const char * const format, ...)
 			case 'i':
 				printf("%d", va_arg(spc, int));
 				check_stat = 0;
-				break;
+				break; /* check if condition has been met */
 			case 'f':
 				printf("%f", va_arg(spc, double));
 				check_stat = 0;
@@ -38,6 +38,7 @@ void print_all(const char * const format, ...)
 				if (str == NULL)
 					str = "(nil)";
 				printf("%s", str);
+				check_stat = 0;
 				break;
 			default:
 				check_stat = 1;
