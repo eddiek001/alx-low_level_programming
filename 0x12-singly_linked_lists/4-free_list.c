@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * free_list - list of nodes
- * head: first node
+ * @head: first node
  *
  */
 void free_list(list_t *head)
