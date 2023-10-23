@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_nodeint - add node at the end of a function
+ * add_nodeint_end - add node at the end of a function
  * @n: data to be added
  * @head: the pointer pointing
  *
