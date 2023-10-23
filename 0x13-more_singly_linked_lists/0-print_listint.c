@@ -1,7 +1,10 @@
 #include "lists.h"
+
 /*
- * print_listint - print all the elements
- * @h: input pointer
+ * print_listint- print all the elements
+ *
+ * @h: - input pointer
+ *
  * Return: the number of nodes
  */
 
