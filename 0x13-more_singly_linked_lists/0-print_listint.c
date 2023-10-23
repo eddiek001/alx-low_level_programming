@@ -1,13 +1,10 @@
 #include "lists.h"
-
 /*
- * print_listint- print all the elements
+ * print_listint print all elements
+ * @h: list of type
  *
- * @h: - input pointer
- *
- * Return: the number of nodes
+ * Return: number of nodes
  */
-
 size_t print_listint(const listint_t *h)
 {
 	size_t count;
