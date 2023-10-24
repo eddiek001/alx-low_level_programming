@@ -1,5 +1,5 @@
 #include "lists.h"
-/*
+/**
  * print_listint print all elements
  * @h: list of type
  *
