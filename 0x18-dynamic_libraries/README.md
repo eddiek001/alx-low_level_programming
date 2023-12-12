@@ -2,9 +2,9 @@
 C
  By: Julien Barbier
  Weight: 1
- Project will start Dec 11, 2023 6:00 AM, must end by Dec 12, 2023 6:00 AM
- Checker was released at Dec 11, 2023 12:00 PM
+ Ongoing second chance project - started Dec 11, 2023 6:00 AM, must end by Dec 16, 2023 6:00 AM
  An auto review will be launched at the deadline
+
 
 #Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:

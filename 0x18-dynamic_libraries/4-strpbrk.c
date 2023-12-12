@@ -1,26 +1,25 @@
-#include "main.h"
 /**
- *  * _strpbrk - Entry point
- *   * @s: input
- *    * @accept: input
- *     * Return: Always 0 (Success)
- *      */
+ * _strpbrk - searches string for set of bytes
+ *
+ * @s: string to check
+ * @accept: substring of chars
+ *
+ * Return: pointer to first occurance
+ */
 char *_strpbrk(char *s, char *accept)
 {
-		int k;
+	int i;
 
-
-			while (*s)
-					{
-								for (k = 0; accept[k]; k++)
-											{
-														if (*s == accept[k])
-																	return (s);
-																}
-									s++;
-										}
-
-
-			return ('\0');
+	while (*s)
+	{
+		i = 0;
+		while (*(accept + i) != '\0')
+		{
+			if (*(accept + i) == *s)
+				return (s);
+			i++;
+		}
+		s++;
+	}
+	return (0); /* didn't find an occurance */
 }
-
