@@ -1,13 +1,18 @@
+#include "main.h"
 /**
- * _isdigit - checks if int is digit or not
+ * _isdigit - check if parameter is a digit or character
  *
- * @c: int c, represents a char
- *
- * Return: 1 if c is digit, 0 otherwise
+ * @c: parameter
+ * Return: 1 if its a number and 0 otherwise
  */
 int _isdigit(int c)
 {
-	if (c >= 48 && c <= 57) /* ascii 0..9 values */
+	if (c >= 48 && c <= 57)
+	{
 		return (1);
-	return (0);
+	}
+	else
+	{
+		return (0);
+	}
 }

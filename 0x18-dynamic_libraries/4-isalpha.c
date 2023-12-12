@@ -1,13 +1,28 @@
+#include "main.h"
 /**
- * _isalpha - checks if a char is alpha or not
+ * _isalpha - return 1 when c is cap or low
  *
- * @c: character parameter to check
+ * Description: we are using _putchar
  *
- * Return: 1 if letter, 0 otherwise
+ * @c: collect the character
+ *
+ * Return: 1 if c is low or cap otherwise 0
  */
 int _isalpha(int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
-	return (0);
+	char lower, upper;
+	int letter = 0;
+
+	for (lower = 'a'; lower <= 'z'; lower++)
+	{
+		for (upper = 'A'; upper <= 'Z'; upper++)
+		{
+			if (lower == c || upper == c)
+			{
+				letter = 1;
+			}
+
+		}
+	}
+	return (letter);
 }
