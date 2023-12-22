@@ -33,7 +33,7 @@ void hash_table_print(const hash_table_t *ht)
 
 /**
  * not_last_node - checks if index where node is is the last node
-   of a hash table.
+ * of a hash table.
  * @ht: hash table to check
  * @node: node to check
  *
@@ -44,10 +44,11 @@ int not_last_node(const hash_table_t *ht, hash_node_t *node)
 	unsigned long int key_i = 0;
 
 	key_i = key_index((unsigned char *)node->key, ht->size);
-	for (key_i = key_i + 1; key_i < ht->size; key_i++)
+	while (key_i < ht->size)
 	{
-		if (ht->array[key_i] != NULL)
+		if (ht->array[key_i] != NULL && ht->array[key_i] != node)
 			return (1);
+		key_i++;
 	}
 	return (0);
 }

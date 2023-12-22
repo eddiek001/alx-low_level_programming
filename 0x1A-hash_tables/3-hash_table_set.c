@@ -48,8 +48,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		{
 			if (strcmp(temp_node->key, key_copy) == 0)
 			{
-				free(ht->array[key_i]->value);
-				ht->array[key_i]->value = val_copy;
+				free(temp_node->value);
+				temp_node->value = val_copy;
 				free(key_copy);
 				free(new_node);
 				return (1);
